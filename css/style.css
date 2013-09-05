@@ -1,0 +1,203 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-list {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-list:before {
+	content: "\6e";
+}
+
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+html, body {
+	background:rgb(226,226,226);
+	font-family: "Open Sans", "Source Sans Pro", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.floatholder {
+	clear: both;
+}
+
+header h1.logo {
+	background: rgb(108,252,180);
+	color: white;
+	margin: 0;
+	padding: 3% 2%;
+}
+
+header div.open_mobile {
+	display: none;
+}
+
+footer {
+	background: rgb(108,252,180);
+	color: white;
+	margin: 0;
+	padding: 3% 2%;
+}
+
+section.newest_post {
+	background: white;
+	margin: 1% 0;
+	padding: 1% 2%;
+}
+
+section.newest_post .firstcont {
+	float: left;
+	width: 50%;
+}
+
+section.newest_post .secondcont {
+	float: left;
+	padding:0 0 0 1%;
+	width: 50%;
+}
+
+section.newest_post .secondcont p{
+	text-indent: 2em;
+}
+
+aside.recent_videos {
+	background: white;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.main_separator {
+	background: rgb(109,219,255);
+	color: white;
+	padding: 3% 2%;
+}
+
+article.recent {
+	background: white;
+	margin: 1%;
+	padding: 1%;
+}
+/**/
+time {
+	color: rgb(150,150,150);
+	font-weight: bold;
+	font-size: .8em;
+}
+
+footer h3 {
+	margin: 0;
+}
+
+header nav{
+	background: rgba(0,0,0,.2);
+}
+
+header nav ul li {
+	margin: 0;
+	padding: 0;
+	width:50%;
+	font-weight: bold;
+	background: #888;
+	float:left;
+	border: 1px solid rgba(0,0,0,.3);
+}
+
+nav ul li a{
+	color:#fff;
+	text-decoration: none;
+}
+
+header nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 480px){
+
+	header div.mainHead{
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	header h1.logo {
+		float:left;
+		font-size: 1.5em;
+		width: 90%;
+	}
+
+	header div.open_mobile {
+		background: rgb(108,252,180);
+		color: white;
+		cursor: pointer;
+		display: block;
+		float: left;
+		font-size: 1.3em;
+		margin: 0;
+		padding: 3% 2%;
+		width: 10%;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header nav.open{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	article.recent {
+		width: 48%;
+		float:left;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	article.recent {
+		width: 31%;
+	}
+}
