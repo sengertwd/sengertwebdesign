@@ -1,0 +1,51 @@
+section.newest_post {
+	background: white;
+	margin: 1% 0;
+	padding: 1% 2%;
+}
+
+section.newest_post .firstcont {
+	float: left;
+	width: 50%;
+}
+
+section.newest_post .secondcont {
+	float: left;
+	padding:0 0 0 1%;
+	width: 50%;
+}
+
+section.newest_post .secondcont p{
+	text-indent: 2em;
+}
+
+aside.recent_videos {
+	background: white;
+	margin: 1%;
+	padding: 1%;
+}
+
+div.main_separator {
+	background: rgb(109,219,255);
+	color: white;
+	padding: 3% 2%;
+}
+
+article.recent {
+	background: white;
+	margin: 1%;
+	padding: 1%;
+}
+
+@media screen and (min-width: 500px) {
+	article.recent {
+		width: 48%;
+		float:left;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	article.recent {
+		width: 31%;
+	}
+}

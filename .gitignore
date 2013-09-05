@@ -1,2 +1,3 @@
-_site
-assets/videos/
+./_site
+./assets/videos
+./.sass-cache/

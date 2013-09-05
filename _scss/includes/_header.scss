@@ -1,0 +1,63 @@
+
+header nav{
+	background: rgba(0,0,0,.2);
+}
+
+header nav ul li {
+	margin: 0;
+	padding: 0;
+	width:50%;
+	font-weight: bold;
+	background: #888;
+	float:left;
+	border: 1px solid rgba(0,0,0,.3);
+}
+
+nav ul li a{
+	color:#fff;
+	text-decoration: none;
+}
+
+header nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 480px){
+
+	header div.mainHead{
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	header h1.logo {
+		float:left;
+		font-size: 1.5em;
+		width: 90%;
+	}
+
+	header div.open_mobile {
+		background: rgb(108,252,180);
+		color: white;
+		cursor: pointer;
+		display: block;
+		float: left;
+		font-size: 1.3em;
+		margin: 0;
+		padding: 3% 2%;
+		width: 10%;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header nav.open{
+		display: block;
+	}
+}

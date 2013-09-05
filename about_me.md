@@ -1,5 +1,5 @@
 ﻿---
-layout: default
+layout: main_content
 title:  "About Me"
 date:   2013-07-19 10:38:45
 categories: introduction
