@@ -2,7 +2,7 @@
 layout: post
 title:  "My experience with Flexbox"
 date:   2013-07-31 18:12:45
-categories: development css3
+categories: blog development css3
 ---
 
 ### My thoughts on flexbox

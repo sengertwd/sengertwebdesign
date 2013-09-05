@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2013-09-04 18:03:20
-categories: jekyll update
+categories: blog jekyll update
 preview: "This is just a preview of what is to come for this should be pretty coooool."
 ---
 

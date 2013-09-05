@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Sengert WD!"
 date:   2013-07-06 13:41:45
-categories: introduction
+categories: blog introduction
 ---
 
 Sengert WD is a small blog about web design and coding. There will be tutorials about HTML, CSS, JavaScript, and a bunch of other topics.

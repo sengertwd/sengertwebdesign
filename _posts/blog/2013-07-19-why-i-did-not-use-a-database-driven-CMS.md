@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I did not use a Database Driven CMS"
 date:   2013-07-19 13:41:45
-categories: development
+categories: blog development
 ---
 
 ### Speed
