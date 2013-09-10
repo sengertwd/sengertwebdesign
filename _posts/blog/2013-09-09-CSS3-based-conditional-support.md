@@ -3,6 +3,7 @@ layout: post
 title: "CSS3 based Conditional Support"
 date:   2013-09-07 19:25:45
 categories: blog development css3
+preview: "While tyring to solve a problem with having {-webkit-background-clip:text;} and using a gradient to color the text, I came accross CSS that could allow me to create the CSS and only apply it when the browser supported it. I did not even know this existed in CSS until this point and thought it was only doable in Javascript. It has become a game changer for when I am developing sites from this point on."
 ---
 
 #CSS3 based Conditional Support

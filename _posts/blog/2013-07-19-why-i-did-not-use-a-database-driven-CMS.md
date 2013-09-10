@@ -3,6 +3,7 @@ layout: post
 title:  "Why I did not use a Database Driven CMS"
 date:   2013-07-19 13:41:45
 categories: blog development
+preview: "I chose to use Jekyll CMS because it compiles the entire blog and allows me to upload it all at once for completely static files. This is absolutely great because it does not require the server to process any code which speeds up the site a lot. Also I do not have to worry about any syntax errors or getting too many hits and crashing the server."
 ---
 
 ### Speed
