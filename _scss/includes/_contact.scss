@@ -1,0 +1,58 @@
+.contact{
+	background: rgb(240,240,240);
+	// background: red;
+	padding: 4% 1%;
+	margin: 2% 0%;
+
+	h2{
+		text-align: center;
+	}
+
+	input, textarea, button.submit {
+		font-family: "Open Sans", "Source Sans Pro", sans-serif;
+		font-size: 1.2rem;
+		width: 100%;
+	}
+
+	input, textarea {
+		padding-left: 1em;
+		border: none;
+		border-radius: 2px;
+
+		@media screen and (min-width: 600px) {
+			border-radius: 5px;
+		}
+	}
+
+	textarea {
+		resize: none;
+		min-height: 4em;
+
+		@media screen and (min-width: 600px) {
+			min-height: 9em;
+		}
+	}
+
+	input, button.submit{
+		line-height: 1.5em;
+	}
+
+	button.submit{
+		color: rgb(100,100,100);
+		background: rgb(109,219,255);
+		border-radius: 2px;
+		border: none;
+		padding: .5em 0;
+
+		@media screen and (min-width: 600px) {
+			border-radius: 5px;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		border-radius: 5px;
+		box-shadow: 1px 1px 0 #AAA, 1px 1px 9px rgba(0,0,0,.7);
+		margin: 5% auto;
+		width: 50%;
+	}
+}

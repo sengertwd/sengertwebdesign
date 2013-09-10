@@ -348,3 +348,43 @@ article.recent {
 @media screen and (min-width: 1200px) {
   article.recent {
     width: 31%; } }
+.contact {
+  background: #f0f0f0;
+  padding: 4% 1%;
+  margin: 2% 0%; }
+  .contact h2 {
+    text-align: center; }
+  .contact input, .contact textarea, .contact button.submit {
+    font-family: "Open Sans", "Source Sans Pro", sans-serif;
+    font-size: 1.2rem;
+    width: 100%; }
+  .contact input, .contact textarea {
+    padding-left: 1em;
+    border: none;
+    border-radius: 2px; }
+    @media screen and (min-width: 600px) {
+      .contact input, .contact textarea {
+        border-radius: 5px; } }
+  .contact textarea {
+    resize: none;
+    min-height: 4em; }
+    @media screen and (min-width: 600px) {
+      .contact textarea {
+        min-height: 9em; } }
+  .contact input, .contact button.submit {
+    line-height: 1.5em; }
+  .contact button.submit {
+    color: #646464;
+    background: #6ddbff;
+    border-radius: 2px;
+    border: none;
+    padding: .5em 0; }
+    @media screen and (min-width: 600px) {
+      .contact button.submit {
+        border-radius: 5px; } }
+  @media screen and (min-width: 600px) {
+    .contact {
+      border-radius: 5px;
+      box-shadow: 1px 1px 0 #aaaaaa, 1px 1px 9px rgba(0, 0, 0, 0.7);
+      margin: 5% auto;
+      width: 50%; } }
