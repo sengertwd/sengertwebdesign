@@ -5,7 +5,7 @@ layout: wrapper
 <section class="newest_post">
 	<div class="firstcont">
 		<img src="holder.js/100%x300" alt="">
-		<h2>Newest Post: {{ post.title }}</h2>
+		<h2>Newest Post: <a href="{{ post.url }}">{{ post.title }}</a></h2>
 	</div>
 	<div class="secondcont">
 		<time datetime="2013-08-30">{{ post.date | date_to_string }}</time>

@@ -5,15 +5,45 @@ header nav{
 
 header nav ul li {
 	margin: 0;
-	padding: 0;
 	width:50%;
 	font-weight: bold;
+	font-size: 1em;
 	background: #888;
 	float:left;
 	border: 1px solid rgba(0,0,0,.3);
+	padding: 10px;
+	padding-left: 2em;
+
+	span{
+		padding-right:1em;
+	}
+
+	@media screen and (min-width: 640px) {
+		margin: 0;
+		width: calc(100% / 4);
+		font-weight: bold;
+		font-size: 1em;
+		background: rgb(108,252,180);
+		float:left;
+		border: 1px solid rgb(88,232,160);
+		padding: 10px;
+		padding-left: 2em;
+		-webkit-transition: background .5s;
+
+		&:hover {
+			background: rgb(88,232,160);
+		}
+	}
+
+
+	@media screen and (min-width: 1300px) {
+		width: calc(100% / 8);
+	}
+
+
 }
 
-nav ul li a{
+nav ul a{
 	color:#fff;
 	text-decoration: none;
 }
@@ -39,6 +69,7 @@ header nav ul{
 		float:left;
 		font-size: 1.5em;
 		height: 2.5rem;
+		text-decoration: none;
 		width: 90%;
 	}
 
@@ -48,7 +79,7 @@ header nav ul{
 		cursor: pointer;
 		display: block;
 		float: left;
-		font-size: 1.3em;
+		font-size: 1.5em;
 		height: 2.5rem;
 		margin: 0;
 		padding: 3% 2%;
@@ -65,4 +96,6 @@ header nav ul{
 		height: auto;
 		max-height: 500px;
 	}
+
+	
 }

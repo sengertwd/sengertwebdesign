@@ -30,7 +30,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-list {
+.icon-safari, .icon-opera, .icon-IE, .icon-firefox, .icon-chrome, .icon-css3, .icon-html5, .icon-file-css, .icon-file-xml, .icon-pinterest, .icon-github, .icon-google-plus, .icon-facebook, .icon-twitter, .icon-tablet, .icon-mobile, .icon-mobile-2, .icon-laptop, .icon-screen, .icon-clock, .icon-book, .icon-coin, .icon-books, .icon-file, .icon-bubble, .icon-brightness-medium, .icon-play, .icon-phone, .icon-copy, .icon-menu, .icon-question {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -40,8 +40,98 @@ you can use the generic selector below, but it's slower:
   line-height: 1;
   -webkit-font-smoothing: antialiased; }
 
-.icon-list:before {
-  content: "\6e"; }
+.icon-safari:before {
+  content: "\e000"; }
+
+.icon-opera:before {
+  content: "\e001"; }
+
+.icon-IE:before {
+  content: "\e002"; }
+
+.icon-firefox:before {
+  content: "\e003"; }
+
+.icon-chrome:before {
+  content: "\e004"; }
+
+.icon-css3:before {
+  content: "\e005"; }
+
+.icon-html5:before {
+  content: "\e006"; }
+
+.icon-file-css:before {
+  content: "\e007"; }
+
+.icon-file-xml:before {
+  content: "\e008"; }
+
+.icon-pinterest:before {
+  content: "\e009"; }
+
+.icon-github:before {
+  content: "\e00a"; }
+
+.icon-google-plus:before {
+  content: "\e00b"; }
+
+.icon-facebook:before {
+  content: "\e00c"; }
+
+.icon-twitter:before {
+  content: "\e00d"; }
+
+.icon-tablet:before {
+  content: "\e00e"; }
+
+.icon-mobile:before {
+  content: "\e00f"; }
+
+.icon-mobile-2:before {
+  content: "\e010"; }
+
+.icon-laptop:before {
+  content: "\e011"; }
+
+.icon-screen:before {
+  content: "\e012"; }
+
+.icon-clock:before {
+  content: "\e013"; }
+
+.icon-book:before {
+  content: "\e014"; }
+
+.icon-coin:before {
+  content: "\e015"; }
+
+.icon-books:before {
+  content: "\e016"; }
+
+.icon-file:before {
+  content: "\e017"; }
+
+.icon-bubble:before {
+  content: "\e018"; }
+
+.icon-brightness-medium:before {
+  content: "\e019"; }
+
+.icon-play:before {
+  content: "\e01a"; }
+
+.icon-phone:before {
+  content: "\e01b"; }
+
+.icon-copy:before {
+  content: "\e01c"; }
+
+.icon-menu:before {
+  content: "\e01e"; }
+
+.icon-question:before {
+  content: "\e01d"; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -112,6 +202,9 @@ header h1.logo, footer h3.logo {
   margin: 0;
   padding: 1% 2%; }
 
+.mainHead a {
+  text-decoration: none; }
+
 header div.open_mobile {
   display: none; }
 
@@ -135,14 +228,35 @@ header nav {
 
 header nav ul li {
   margin: 0;
-  padding: 0;
   width: 50%;
   font-weight: bold;
+  font-size: 1em;
   background: #888;
   float: left;
-  border: 1px solid rgba(0, 0, 0, 0.3); }
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  padding-left: 2em; }
+  header nav ul li span {
+    padding-right: 1em; }
+  @media screen and (min-width: 640px) {
+    header nav ul li {
+      margin: 0;
+      width: calc(100% / 4);
+      font-weight: bold;
+      font-size: 1em;
+      background: #6cfcb4;
+      float: left;
+      border: 1px solid #58e8a0;
+      padding: 10px;
+      padding-left: 2em;
+      -webkit-transition: background .5s; }
+      header nav ul li:hover {
+        background: #58e8a0; } }
+  @media screen and (min-width: 1300px) {
+    header nav ul li {
+      width: calc(100% / 8); } }
 
-nav ul li a {
+nav ul a {
   color: #fff;
   text-decoration: none; }
 
@@ -164,6 +278,7 @@ header nav ul {
     float: left;
     font-size: 1.5em;
     height: 2.5rem;
+    text-decoration: none;
     width: 90%; }
 
   header div.open_mobile {
@@ -172,7 +287,7 @@ header nav ul {
     cursor: pointer;
     display: block;
     float: left;
-    font-size: 1.3em;
+    font-size: 1.5em;
     height: 2.5rem;
     margin: 0;
     padding: 3% 2%;
@@ -222,7 +337,9 @@ div.main_separator {
 article.recent {
   background: white;
   margin: 1%;
-  padding: 1%; }
+  padding: 1%;
+  min-height: 200px;
+  max-height: 200px; }
 
 @media screen and (min-width: 500px) {
   article.recent {
