@@ -22,4 +22,12 @@ HTML Example:
 </div>
 {% endhighlight %}
 
+CSS Example:
+
+{% highlight css %}
+.class{
+	body:#fff;
+}
+{% endhighlight %}
+
 * [My Github] (https://github.com/sengertwd)
