@@ -3,7 +3,7 @@ layout: post
 title:  "My experience with Flexbox"
 date:   2013-07-31 18:12:45
 categories: blog development css3
-preview: "Just the other day I was working on a prototype for a site for one of my designer friends and wanted to try to use one of the newer technologies. I chose to use flexbox for the prototype because it was both a newer technology and it has better support than most of the other new CSS3 layouts."
+preview: "Just the other day I was working on a prototype for a site for one of my designer friends and wanted to try to use one of the newer technologies."
 ---
 
 ### My thoughts on flexbox

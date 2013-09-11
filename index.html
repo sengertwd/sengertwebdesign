@@ -4,19 +4,20 @@ layout: wrapper
 {% for post in site.categories['blog'] limit:1 %}
 <section class="newest_post">
 	<div class="firstcont">
-		<img src="holder.js/100%x300" alt="">
+		<!-- <img src="holder.js/50%x150" alt=""> -->
 		<h2>Newest Post: <a href="{{ post.url }}">{{ post.title }}</a></h2>
-	</div>
-	<div class="secondcont">
 		<time datetime="2013-08-30">{{ post.date | date_to_string }}</time>
 		<p>{{ post.preview }}</p>
+	</div>
+	<div class="secondcont">
+		{{ post.img }}
 	</div>
 	<div class="floatholder"></div>
 </section>
 {% endfor %}
 <aside class="recent_videos">
-	<h2>Recent Tutorials</h2>
-	{% for post in site.categories['tutorial'] limit:3 %}
+	<h2>Recent Tutorial</h2>
+	{% for post in site.categories['tutorial'] limit:1 %}
 		<div class="recent_vid">
 			<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
 			<p>{{ post.description }}</p>
@@ -24,6 +25,7 @@ layout: wrapper
 
 	{% endfor %}
 </aside>
+<div class="floatholder"></div>
 <div class="main_separator">Rescent Blog Posts:</div>
 
 {% for post in site.categories['blog'] offset:1 limit:6 %}
@@ -33,7 +35,8 @@ layout: wrapper
 
 		<time>{{ post.date | date_to_string }}</time>
 
-		<p>{{ post.preview }}</p>
+		<div>{{ post.preview }}</div>
+		<div class="floatholder"></div>
 	</article>
 
 {% endfor %}

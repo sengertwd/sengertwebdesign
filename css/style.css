@@ -303,6 +303,7 @@ header nav ul {
     max-height: 500px; } }
 article.main {
   background: white;
+  min-height: 90%;
   margin: 1% 0;
   padding: 2%;
   width: 100%; }
@@ -310,16 +311,22 @@ article.main {
 section.newest_post {
   background: white;
   margin: 1% 0;
-  padding: 1% 2%; }
+  padding: 1% 1% 3%; }
+  @media screen and (min-width: 500px) {
+    section.newest_post {
+      float: left;
+      min-height: 250px;
+      margin: 1% 0 1% 1%;
+      width: 77%; } }
 
 section.newest_post .firstcont {
   float: left;
-  width: 50%; }
+  width: 75%; }
 
 section.newest_post .secondcont {
   float: left;
   padding: 0 0 0 1%;
-  width: 50%; }
+  width: 25%; }
 
 section.newest_post .secondcont p {
   text-indent: 2em; }
@@ -328,6 +335,11 @@ aside.recent_videos {
   background: white;
   margin: 1%;
   padding: 1%; }
+  @media screen and (min-width: 500px) {
+    aside.recent_videos {
+      float: left;
+      height: 250px;
+      width: 20%; } }
 
 div.main_separator {
   background: #6ddbff;
@@ -339,7 +351,12 @@ article.recent {
   margin: 1%;
   padding: 1%;
   min-height: 200px;
+  height: 200px;
   max-height: 200px; }
+  article.recent div {
+    overflow: hidden;
+    width: 100%;
+    text-overflow: clip; }
 
 @media screen and (min-width: 500px) {
   article.recent {
