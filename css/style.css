@@ -443,8 +443,7 @@ you can use the generic selector below, but it's slower:
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .4em;
-  text-wrap: unrestricted; }
+  padding: 0 .4em; }
   @media screen and (max-width: 600px) {
     .post pre {
       font-size: .6em; } }
